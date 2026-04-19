@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FiGlobe } from "react-icons/fi";
+import { MdRealEstateAgent } from "react-icons/md";
 export default function NavbarTop() {
   return (
     <>
@@ -8,9 +9,13 @@ export default function NavbarTop() {
         <div className="flex justify-between items-center px-8 h-16 w-full max-w-7xl mx-auto">
           <div className="flex items-center gap-8">
             <Link
-              className="text-2xl font-black tracking-tight text-primary-container"
-              href="#"
+              href="/"
+              className="flex items-center gap-2 text-2xl font-black tracking-tight text-primary-container"
             >
+              <MdRealEstateAgent
+                aria-hidden="true"
+                className="text-primary group-hover:opacity-80 transition-opacity"
+              />
               EstateX
             </Link>
           </div>
