@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiBriefcase, FiFilter, FiLayers, FiMaximize2 } from "react-icons/fi";
+import { MdArrowForward } from "react-icons/md";
 
 export default function LandsPage() {
   return (
@@ -210,6 +211,19 @@ export default function LandsPage() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="flex flex-col items-center border-b border-outline-variant pb-4 gap-2 mt-10">
+        <h3 className="text-xl font-bold text-on-surface text-center">
+          Recent Listings
+        </h3>
+
+        <Link
+          href="/Pages/recent-listings"
+          className="text-sm font-medium text-primary hover:text-primary-container transition-colors flex items-center gap-1"
+        >
+          View All
+          <MdArrowForward className="text-[16px]" />
+        </Link>
       </div>
     </main>
   );

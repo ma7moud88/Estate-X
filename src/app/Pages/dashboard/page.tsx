@@ -1,9 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import {
+  MdAddCircle,
+  MdArrowForward,
   MdCheckCircle,
+  MdCloudUpload,
+  MdDelete,
+  MdEdit,
+  MdLocationOn,
   MdMail,
+  MdPublish,
   MdRealEstateAgent,
   MdTrendingUp,
   MdVisibility,
@@ -126,15 +134,13 @@ export default function SellerDashboard() {
                 Recent Listings
               </h3>
 
-              <a
-                href="#"
+              <Link
+                href="/Pages/recent-listings"
                 className="text-sm font-medium text-primary hover:text-primary-container transition-colors flex items-center gap-1"
               >
                 View All
-                <span className="material-symbols-outlined text-[16px]">
-                  arrow_forward
-                </span>
-              </a>
+                <MdArrowForward className="text-[16px]" />
+              </Link>
             </div>
 
             {/* Listings Grid */}
@@ -173,15 +179,11 @@ export default function SellerDashboard() {
 
                     <div className="flex gap-2 text-on-surface-variant">
                       <button className="p-2 hover:bg-surface-variant rounded-full transition-colors">
-                        <span className="material-symbols-outlined text-[20px]">
-                          edit
-                        </span>
+                        <MdEdit className="text-[20px]" />
                       </button>
 
                       <button className="p-2 hover:bg-error-container hover:text-on-error-container rounded-full transition-colors">
-                        <span className="material-symbols-outlined text-[20px]">
-                          delete
-                        </span>
+                        <MdDelete className="text-[20px]" />
                       </button>
                     </div>
                   </div>
@@ -221,15 +223,10 @@ export default function SellerDashboard() {
 
                     <div className="flex gap-2 text-on-surface-variant">
                       <button className="p-2 hover:bg-surface-variant rounded-full transition-colors">
-                        <span className="material-symbols-outlined text-[20px]">
-                          edit
-                        </span>
+                        <MdEdit className="text-[20px]" />
                       </button>
-
                       <button className="p-2 hover:bg-error-container hover:text-on-error-container rounded-full transition-colors">
-                        <span className="material-symbols-outlined text-[20px]">
-                          delete
-                        </span>
+                        <MdDelete className="text-[20px]" />
                       </button>
                     </div>
                   </div>
@@ -243,9 +240,8 @@ export default function SellerDashboard() {
             <div className="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant shadow-sm sticky top-6">
               {/* Header */}
               <div className="flex items-center gap-2 border-b border-outline-variant pb-4 mb-6">
-                <span className="material-symbols-outlined text-primary">
-                  add_circle
-                </span>
+                <MdAddCircle className="text-primary text-xl" />
+
                 <h3 className="text-lg font-bold text-on-surface">
                   Quick Add Land
                 </h3>
@@ -297,9 +293,7 @@ export default function SellerDashboard() {
                   </label>
 
                   <div className="relative">
-                    <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">
-                      location_on
-                    </span>
+                    <MdLocationOn className="absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]" />
 
                     <input
                       type="text"
@@ -331,9 +325,7 @@ export default function SellerDashboard() {
 
                   <div className="border-2 border-dashed border-outline-variant rounded-lg p-6 flex flex-col items-center justify-center bg-surface hover:bg-surface-container transition-colors cursor-pointer group">
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform mb-3">
-                      <span className="material-symbols-outlined">
-                        cloud_upload
-                      </span>
+                      <MdCloudUpload className="text-xl" />
                     </div>
 
                     <p className="text-sm font-medium text-on-surface mb-1">
@@ -351,9 +343,7 @@ export default function SellerDashboard() {
                   type="button"
                   className="w-full bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container font-bold py-3 rounded-lg transition-colors mt-2 shadow-sm flex justify-center items-center gap-2"
                 >
-                  <span className="material-symbols-outlined text-[20px]">
-                    publish
-                  </span>
+                  <MdPublish className="text-[20px]" />
                   Publish Listing
                 </button>
               </form>
