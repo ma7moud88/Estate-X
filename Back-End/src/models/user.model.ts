@@ -6,19 +6,19 @@ export interface IUser  {
   email: string;
   password: string;
   phone: string;
-  role?: Role;
+  // role?: Role;
   nationalID: string;
   nationalIDImage: string | null;
   createdAt: Date;
   isEmailVerified: boolean;
 }
 
-export enum Role {
-  // BUYER = "buyer",
-  // SELLER = "seller",
-  AGENT = "agent",
-  ADMIN = "admin",
-}
+// export enum Role {
+//   BUYER = "buyer",
+//   SELLER = "seller",
+//   AGENT = "agent",
+//   ADMIN = "admin",
+// }
 
 export const userSchema = new mongoose.Schema<IUser>({
   name: {
@@ -40,12 +40,12 @@ export const userSchema = new mongoose.Schema<IUser>({
     required: true,
     unique: true,
   },
-  role: {
-    type: String,
-    enum: [Role.AGENT, Role.ADMIN],
-    default: Role.AGENT,
-    // required: true,
-  },
+  // role: {
+  //   type: String,
+  //   enum: [Role.AGENT, Role.ADMIN],
+  //   default: Role.AGENT,
+  //   // required: true,
+  // },
   nationalID: {
     type: String,
     unique: true,
