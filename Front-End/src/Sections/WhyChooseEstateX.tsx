@@ -1,4 +1,9 @@
-import { MdSearch, MdShield, MdVerifiedUser } from "react-icons/md";
+import {
+  MdSearch,
+  MdShield,
+  MdTrendingUp,
+  MdVerifiedUser,
+} from "react-icons/md";
 
 export default function WhyChooseEstateX() {
   return (
