@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FiBriefcase, FiFilter, FiLayers, FiMaximize2 } from "react-icons/fi";
 
 export default function LandsPage() {
@@ -69,7 +70,7 @@ export default function LandsPage() {
               <option>Over 3M EGP</option>
             </select>
           </div>
-        
+
           <button className="bg-primary-container text-white px-6 py-2 rounded-lg font-medium hover:bg-color-on-primary-fixed-variant transition-colors flex items-center justify-center gap-2 self-end h-9.5">
             <FiFilter />
             Filter
@@ -114,9 +115,12 @@ export default function LandsPage() {
                 Residential
               </span>
             </div>
-            <button className="mt-auto bg-primary-container/10 text-color-primary py-2 rounded-lg hover:bg-primary-container hover:text-white transition">
+            <Link
+              href="/Pages/details"
+              className="mt-auto inline-block text-center bg-primary-container/10 text-color-primary py-2 rounded-lg hover:bg-primary-container hover:text-white transition"
+            >
               View Details
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -152,10 +156,12 @@ export default function LandsPage() {
                 Commercial
               </span>
             </div>
-
-            <button className="mt-auto bg-primary-container/10 text-color-primary py-2 rounded-lg hover:bg-primary-container hover:text-white transition">
+            <Link
+              href="/Pages/details"
+              className="mt-auto inline-block text-center bg-primary-container/10 text-color-primary py-2 rounded-lg hover:bg-primary-container hover:text-white transition"
+            >
               View Details
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -196,9 +202,12 @@ export default function LandsPage() {
               </span>
             </div>
 
-            <button className="mt-auto bg-primary-container/10 text-color-primary py-2 rounded-lg hover:bg-primary-container hover:text-white transition">
+            <Link
+              href="/Pages/dashboard"
+              className="mt-auto inline-block text-center bg-primary-container/10 text-color-primary py-2 rounded-lg hover:bg-primary-container hover:text-white transition"
+            >
               View Details
-            </button>
+            </Link>
           </div>
         </div>
       </div>
