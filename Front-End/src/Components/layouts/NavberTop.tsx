@@ -25,13 +25,13 @@ export default function NavbarTop() {
               <FiGlobe className="text-lg" />
             </button>
             <Link
-              href="#"
+              href="/Pages/login"
               className="text-sm font-medium text-slate-600 hover:text-primary-container hidden md:inline-block"
             >
               Login
             </Link>
             <Link
-              href="#"
+              href="/"
               className="text-sm font-medium bg-primary-container text-white px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity shadow-sm"
             >
               Register

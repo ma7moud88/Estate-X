@@ -116,7 +116,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/listings"
-                className="text-slate-500 hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-sm w-fit inline-block flex items-center gap-1"
+                className="text-slate-500 hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-sm w-fit flex items-center gap-1"
               >
                 Recent Listings
                 <span className="inline-flex items-center rounded-full bg-surface-container-high px-1.5 py-0.5 text-[10px] font-medium text-primary">
