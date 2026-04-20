@@ -158,7 +158,7 @@ export default function LandsPage() {
               </span>
             </div>
             <Link
-              href="/Pages/details"
+              href="/Pages/Menu"
               className="mt-auto inline-block text-center bg-primary-container/10 text-color-primary py-2 rounded-lg hover:bg-primary-container hover:text-white transition"
             >
               View Details
