@@ -1,30 +1,33 @@
 import Link from "next/link";
+import {
+  MdCall,
+  MdChat,
+  MdLocationOn,
+  MdMail,
+  MdPublic,
+  MdRealEstateAgent,
+  MdShare,
+} from "react-icons/md";
 
 export default function Footer() {
   return (
     <footer
       aria-labelledby="footer-heading"
-      className="bg-white border-t border-slate-100 font-inter text-sm antialiased text-slate-600 w-full"
+      className="bg-white border-t border-slate-100 font-inter text-sm antialiased text-slate-600 w-full
+  shadow-[0_-10px_30px_-10px_rgba(0,0,0,0.25)]"
     >
-      <h2 className="sr-only" id="footer-heading">
-        Footer
-      </h2>
-
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Column 1 */}
         <div className="flex flex-col space-y-4">
           <Link
-            href="#"
-            className="text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-primary rounded w-fit"
+            href="/"
+            className="flex items-center gap-2 text-2xl font-black tracking-tight text-primary-container"
           >
-            <span
+            <MdRealEstateAgent
               aria-hidden="true"
-              className="material-symbols-outlined text-primary group-hover:opacity-80 transition-opacity"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              landscape
-            </span>
+              className="text-primary group-hover:opacity-80 transition-opacity"
+            />
             EstateX
           </Link>
 
@@ -116,7 +119,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/listings"
-                className="text-slate-500 hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-sm w-fit flex items-center gap-1"
+                className="text-slate-500 hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-sm w-fit  flex items-center gap-1"
               >
                 Recent Listings
                 <span className="inline-flex items-center rounded-full bg-surface-container-high px-1.5 py-0.5 text-[10px] font-medium text-primary">
@@ -135,9 +138,7 @@ export default function Footer() {
 
           <ul className="space-y-3">
             <li className="flex items-start gap-2 text-slate-500">
-              <span className="material-symbols-outlined text-[18px] mt-0.5 text-primary">
-                mail
-              </span>
+              <MdMail className="text-[18px] mt-0.5 text-primary" />
               <a
                 href="mailto:hello@estatex.com"
                 className="hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-sm"
@@ -147,9 +148,7 @@ export default function Footer() {
             </li>
 
             <li className="flex items-start gap-2 text-slate-500">
-              <span className="material-symbols-outlined text-[18px] mt-0.5 text-primary">
-                call
-              </span>
+              <MdCall className="text-[18px] mt-0.5 text-primary" />
               <a
                 href="tel:+201234567890"
                 className="hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-sm"
@@ -159,9 +158,7 @@ export default function Footer() {
             </li>
 
             <li className="flex items-start gap-2 text-slate-500">
-              <span className="material-symbols-outlined text-[18px] mt-0.5 text-primary">
-                location_on
-              </span>
+              <MdLocationOn className="text-[18px] mt-0.5 text-primary" />
               <span>New Qena City, Egypt</span>
             </li>
           </ul>
@@ -173,7 +170,7 @@ export default function Footer() {
                 href="#"
                 className="text-slate-400 hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-1"
               >
-                <span className="material-symbols-outlined">public</span>
+                <MdPublic className="text-slate-400 hover:text-blue-600 transition-all duration-200 p-1" />
               </a>
 
               <a
@@ -181,7 +178,7 @@ export default function Footer() {
                 href="#"
                 className="text-slate-400 hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-1"
               >
-                <span className="material-symbols-outlined">share</span>
+                <MdShare className="text-slate-400 hover:text-blue-600 transition-all duration-200 p-1" />
               </a>
 
               <a
@@ -189,7 +186,7 @@ export default function Footer() {
                 href="#"
                 className="text-slate-400 hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-1"
               >
-                <span className="material-symbols-outlined">chat</span>
+                <MdChat className="text-slate-400 hover:text-blue-600 transition-all duration-200 p-1" />
               </a>
             </div>
           </div>
