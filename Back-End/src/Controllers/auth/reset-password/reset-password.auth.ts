@@ -1,7 +1,6 @@
-import { Request, RequestHandler, Response } from "express";
-import { DecodedToken, IParamsResetPassword, IRequestResetPassword } from "./types";
+import {  RequestHandler } from "express";
+import {  IParamsResetPassword, IRequestResetPassword } from "./types";
 import { User } from "../../../models/user.model";
-import { UserToken } from "../../../interfaces/user-token";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import bcrypt from "bcrypt";

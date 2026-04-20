@@ -30,5 +30,5 @@ export const loginAuth:RequestHandler<{},{},IRequestLogin>
 
     res.cookie("token", token, { httpOnly: true });
 
-    res.status(200).json({ message: "Login process completed successfully", data:token });
+    res.status(200).json({ message: "Login process completed successfully", user:{id:user._id.toString(),email:user.email} , data:token });
 }

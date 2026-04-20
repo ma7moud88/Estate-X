@@ -26,6 +26,6 @@ export const registerAuth:RequestHandler<{},{},IRequestRegister>
 
     await emailService.sendEmailVerificationLink(email, token);
 
-    res.status(201).json({ message: "Registration process completed successfully" });
+    res.status(201).json({ message: "Registration process completed successfully", data: user});
 
 }
