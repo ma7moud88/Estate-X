@@ -39,9 +39,9 @@ export default function LoginPage() {
         throw new Error(data.message || "Login failed");
       }
 
-      // 🔐 save user in context + localStorage
+     
       login(data.user);
-      
+
       router.push("/");
     } catch (err: unknown) {
       if (err instanceof Error) {

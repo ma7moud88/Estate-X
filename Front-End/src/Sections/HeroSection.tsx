@@ -22,7 +22,6 @@ export default function Hero() {
             <div className="flex flex-col gap-4">
               <h1 className="text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.1]">
                 Find Your Next Land, <br className="hidden lg:block" />
-                <span className="text-primary-container">بدون تعقيد</span>
               </h1>
 
               <p className="text-lg lg:text-xl text-slate-500 max-w-lg leading-relaxed">
