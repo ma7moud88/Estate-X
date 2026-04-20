@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { MdLock, MdMail, MdRealEstateAgent } from "react-icons/md";
 
@@ -175,12 +174,12 @@ export default function loginPage() {
         {/* Register */}
         <p className="mt-8 text-center text-sm text-on-surface-variant">
           Don it have an account?{" "}
-          <a
-            href="#"
+          <Link
+            href="/Pages/register"
             className="text-primary hover:text-on-primary-fixed-variant"
           >
             Register
-          </a>
+          </Link>
         </p>
       </main>
     </div>

@@ -31,7 +31,7 @@ export default function NavbarTop() {
               Login
             </Link>
             <Link
-              href="/"
+              href="/Pages/register"
               className="text-sm font-medium bg-primary-container text-white px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity shadow-sm"
             >
               Register
