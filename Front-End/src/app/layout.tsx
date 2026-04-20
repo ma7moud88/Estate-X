@@ -1,4 +1,5 @@
 import NavbarTop from "@/Components/layouts/NavberTop";
+import { AuthProvider } from "@/context/AuthContext";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/Components/layouts/Footer";
@@ -18,9 +19,11 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-surface-container-lowest text-on-surface antialiased`}
       >
-        <NavbarTop />
-        {children}
-        <Footer />
+        <AuthProvider>
+          <NavbarTop />
+          {children}
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
