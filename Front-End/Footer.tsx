@@ -1,10 +1,17 @@
 import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import {
+  MdCall,
+  MdLocationOn,
+  MdMail,
+  MdRealEstateAgent,
+} from "react-icons/md";
 
 export default function Footer() {
   return (
     <footer
       aria-labelledby="footer-heading"
-      className="bg-white border-t border-slate-100 font-inter text-sm antialiased text-slate-600 w-full"
+      className="bg-white border-t border-slate-100 font-inter text-sm antialiased text-slate-600 w-full shadow-2xl"
     >
       <h2 className="sr-only" id="footer-heading">
         Footer
@@ -18,13 +25,10 @@ export default function Footer() {
             href="#"
             className="text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-primary rounded w-fit"
           >
-            <span
+            <MdRealEstateAgent
               aria-hidden="true"
-              className="material-symbols-outlined text-primary group-hover:opacity-80 transition-opacity"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              landscape
-            </span>
+              className="text-primary group-hover:opacity-80 transition-opacity"
+            />
             EstateX
           </Link>
 
@@ -135,9 +139,8 @@ export default function Footer() {
 
           <ul className="space-y-3">
             <li className="flex items-start gap-2 text-slate-500">
-              <span className="material-symbols-outlined text-[18px] mt-0.5 text-primary">
-                mail
-              </span>
+              <MdMail className="text-[18px] mt-0.5 text-primary" />
+
               <a
                 href="mailto:hello@estatex.com"
                 className="hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-sm"
@@ -147,9 +150,8 @@ export default function Footer() {
             </li>
 
             <li className="flex items-start gap-2 text-slate-500">
-              <span className="material-symbols-outlined text-[18px] mt-0.5 text-primary">
-                call
-              </span>
+              <MdCall className="text-[18px] mt-0.5 text-primary" />
+
               <a
                 href="tel:+201234567890"
                 className="hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-sm"
@@ -159,38 +161,36 @@ export default function Footer() {
             </li>
 
             <li className="flex items-start gap-2 text-slate-500">
-              <span className="material-symbols-outlined text-[18px] mt-0.5 text-primary">
-                location_on
-              </span>
+              <MdLocationOn className="text-[18px] mt-0.5 text-primary" />
+
               <span>New Qena City, Egypt</span>
             </li>
           </ul>
 
           <div className="mt-4 pt-4 border-t border-slate-50">
             <div className="flex items-center gap-4">
-              <a
+              <Link
                 aria-label="Facebook"
                 href="#"
                 className="text-slate-400 hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-1"
               >
-                <span className="material-symbols-outlined">public</span>
-              </a>
+                <FaFacebookF className="text-2xl mt-0.5 text-primary" />
+              </Link>
 
-              <a
+              <Link
                 aria-label="Instagram"
-                href="#"
-                className="text-slate-400 hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-1"
+                href="/instagram"
+                className="text-slate-400  hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-1"
               >
-                <span className="material-symbols-outlined">share</span>
-              </a>
-
-              <a
+                <FaInstagram className="text-2xl mt-0.5 text-primary" />
+              </Link>
+              <Link
                 aria-label="LinkedIn"
-                href="#"
+                href="/linkedin"
                 className="text-slate-400 hover:text-blue-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-1"
               >
-                <span className="material-symbols-outlined">chat</span>
-              </a>
+                <FaLinkedinIn className="text-2xl mt-0.5 text-primary" />
+              </Link>
             </div>
           </div>
         </div>

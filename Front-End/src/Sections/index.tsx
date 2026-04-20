@@ -2,6 +2,7 @@ import About from "./AboutSection";
 import Hero from "./HeroSection";
 import HowEstateGoldWorks from "./HowEstateGoldWorks";
 import LandsPage from "./LandsPageSection";
+import PreFooter from "./PreFooter";
 import WhyChooseEstateX from "./WhyChooseEstateX";
 
 export default function Sections() {
@@ -12,6 +13,7 @@ export default function Sections() {
       <LandsPage />
       <WhyChooseEstateX />
       <HowEstateGoldWorks />
+      <PreFooter />
     </>
   );
 }
