@@ -12,7 +12,7 @@ export default function ProfilePage() {
   return (
     <>
       {/* Main Content */}
-      <main className="max-w-3xl mx-auto px-4 py-10">
+      <main className="max-w-3xl mx-auto px-4 py-10 mt-16">
         <div className="bg-white rounded-2xl shadow-[0_20px_60px_-10px_rgba(0,0,0,0.25)] overflow-hidden border border-slate-100">
           {/* Accent */}
           <div className="h-1.5 w-full bg-brand-accent" />

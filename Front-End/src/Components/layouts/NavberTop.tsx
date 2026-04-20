@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiGlobe } from "react-icons/fi";
-import { MdMenu, MdRealEstateAgent } from "react-icons/md";
+import { MdMenu, MdNotifications, MdRealEstateAgent } from "react-icons/md";
 export default function NavbarTop() {
   return (
     <>
@@ -81,47 +81,23 @@ export default function NavbarTop() {
 
               {/* Right */}
               <div className="flex items-center gap-4">
-                <button className="text-outline hover:text-primary p-2 rounded-full hover:bg-surface-container-low">
-                  <span className="material-symbols-outlined">search</span>
+                <button
+                  aria-label="Notifications"
+                  className="text-on-surface-variant hover:text-primary-container transition-colors duration-200 opacity-80 hover:opacity-100"
+                >
+                  <MdNotifications className="text-[24px]" />
                 </button>
 
                 <div className="relative group">
-                  <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT3Kv7_PYwkJ7nn4C8roMlFb7Zbc12_k53xRgqem5q1smVZOs7LfTR-OHF4QN_QEBM9SvxAAedNIKfV9t-EiBsh4f8221M8clqj3wwpwNwR-UyDiwdoM7bHS62eoMSnELuSQsOMN3DGGldq_QE-d9wwOk7yguTb_HQQ-tDQ2nFl3nxByMdIprsXHSvBWLOGoVQ-KOD0z5RE59ao246qgp2V0KvvKY7FLE76Wd37LC1h_IeW56ysZRZtFKjFvpLHz8a3tmSWQ9Z9oLs"
-                    alt="Profile"
-                    width={36}
-                    height={36}
-                    className="w-9 h-9 rounded-full object-cover cursor-pointer"
-                  />
-
-                  {/* Dropdown */}
-                  <div className="absolute right-0 top-full mt-2 w-48 bg-surface-container-lowest rounded-xl shadow-lg border border-outline-variant py-2 hidden group-hover:block">
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 hover:bg-surface-container-low"
-                    >
-                      Profile
-                    </Link>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 hover:bg-surface-container-low"
-                    >
-                      Wishlist
-                    </Link>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 hover:bg-surface-container-low"
-                    >
-                      Dashboard
-                    </Link>
-                    <div className="h-px bg-outline-variant my-1"></div>
-                    <Link
-                      href="#"
-                      className="block px-4 py-2 text-error hover:bg-error-container"
-                    >
-                      Logout
-                    </Link>
-                  </div>
+                  <Link href="/Pages/profile">
+                    <Image
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT3Kv7_PYwkJ7nn4C8roMlFb7Zbc12_k53xRgqem5q1smVZOs7LfTR-OHF4QN_QEBM9SvxAAedNIKfV9t-EiBsh4f8221M8clqj3wwpwNwR-UyDiwdoM7bHS62eoMSnELuSQsOMN3DGGldq_QE-d9wwOk7yguTb_HQQ-tDQ2nFl3nxByMdIprsXHSvBWLOGoVQ-KOD0z5RE59ao246qgp2V0KvvKY7FLE76Wd37LC1h_IeW56ysZRZtFKjFvpLHz8a3tmSWQ9Z9oLs"
+                      alt="Profile"
+                      width={36}
+                      height={36}
+                      className="w-9 h-9 rounded-full object-cover cursor-pointer"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
